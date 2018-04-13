@@ -66,7 +66,10 @@ end
   # etc.
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday_names|
-    puts "#{season}: #{holiday_names.keys.to_s} #{holiday_names.values.flatten}"
+    puts "#{season}:"
+    holiday_names.each do |holiday_name, item|
+      puts "#{holiday_name} : #{item.join(", ")}"
+    end
   end
 end
 
