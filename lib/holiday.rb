@@ -84,7 +84,7 @@ end
         items.find_all do |item|
           item == "BBQ"
             return holiday_hash[season].keys
-          end
+        
         end
       end
     end
