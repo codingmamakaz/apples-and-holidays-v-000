@@ -82,7 +82,7 @@ end
       holiday_names.each do |holiday_name, items|
         items.find do |item|
           if item == "BBQ"
-            puts holiday_name
+            holiday_name
           end
         end
       end
