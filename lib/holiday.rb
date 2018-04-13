@@ -81,6 +81,7 @@ end
     holiday_hash.each do |season, holiday_names|
       holiday_names.each do |holiday_name, items|
         items.find do |item|
+          binding.pry
           if item == "BBQ"
             holiday_name
           end
