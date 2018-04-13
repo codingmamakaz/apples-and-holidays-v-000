@@ -77,14 +77,14 @@ end
   # include the string "BBQ"
 
 
-  def all_holidays_with_bbq(holiday_hash)
-    holiday_hash.collect do |season, holiday_names|
-      holiday_names.collect do |holiday_name, items|
-        items.find do |item|
-          if item == "BBQ"
-            holiday_names.keys
-          end
+  def all_holidays_with_bbq(holiday_hash)  
+  holiday_hash.collect do |season, holiday_names|
+    holiday_names.collect do |holiday_name, items|
+      items.collect do |item|
+        if item == "BBQ"
+          puts holiday_name
         end
       end
     end
   end
+end
