@@ -82,7 +82,7 @@ end
       holiday_names.collect do |holiday_name, items|
         items.find do |item|
           if item == "BBQ"
-            holiday_name
+            holiday_names.keys
           end
         end
       end
