@@ -82,7 +82,7 @@ end
     holiday_names.collect do |holiday_name, items|
       items.collect do |item|
         if item == "BBQ"
-          puts holiday_name
+          holiday_name
         end
       end
     end
