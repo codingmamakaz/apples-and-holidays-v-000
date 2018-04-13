@@ -82,11 +82,10 @@ end
     holiday_hash.collect do |season, holiday_names|
       holiday_names.collect do |holiday_name, items|
         items.find_all do |item|
-          if item == "BBQ"
+          item == "BBQ"
             return holiday_hash[season].keys
           end
         end
       end
     end
   end
-    
